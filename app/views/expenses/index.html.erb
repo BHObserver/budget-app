@@ -1,0 +1,29 @@
+<section class="home-section">
+  <div class="home-nav">
+    <%= link_to "Budgetify", expenses_path, class: 'logo' %>
+    <div class="page-name">CATEGORIES</div>
+    <%= button_to "log out", destroy_user_session_path, method: :delete, class: 'log-out' %>
+  </div>
+
+  <ul class="expense-list">
+    <% @expenses.each do |expense| %>
+      <li class="expense-item">
+        <%= link_to expense_path(expense), class: "expense-link" do %>
+          <div class="icon-container">
+            <%= image_tag expense.icon , class: 'icon'%>
+          </div>
+          <div class="expense-name">
+            <%= expense.name %>
+          </div>
+          <div class="total-amount">
+            $ <%= expense.total_payment_amount %>
+          </div>
+        <% end %>
+      </li>
+    <% end %> 
+  </ul>
+
+  <div class="new-expense">
+    <%= link_to 'Add Category', new_expense_path, class: "new-expense-link" %>
+  </div>
+</section>
