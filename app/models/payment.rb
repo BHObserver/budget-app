@@ -3,10 +3,7 @@ class Payment < ApplicationRecord
   has_many :allocations
   has_many :expenses, through: :allocations
 
-  validates :name, presence: true
-  validates :amount, presence: true, numericality: { only_integer: true, greater_than: 0 }
 
-  validate :at_least_one_expense_selected
 
   private
 
