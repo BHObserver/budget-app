@@ -1,0 +1,59 @@
+.new-expense-section {
+  background-color: #ececec;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.common-nav {
+  width: 100vw;
+  background-color: #3778c2;
+  padding: 10px;
+  position: relative;
+}
+
+.back-home {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.form-title {
+  padding: 16px;
+}
+
+.expense-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.expense-form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 4px;
+}
+
+.form-input {
+  padding: 8px;
+}
+
+.submit-btn {
+  width: 40%;
+  padding: 8px;
+  background-color: whitesmoke;
+  border: 1px solid #a5a3a3;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+
+.expense-form .checkboxes {
+  display: block;
+}
