@@ -1,0 +1,20 @@
+<section class="new-expense-section">
+  <nav class="common-nav">
+    <%= link_to "←", expenses_path, class: "back-home" %>
+  </nav>
+  
+  <h2 class="form-title"> New Category </h2>
+
+  <%= form_with(model: @expense, url: expenses_path, method: :post, class: 'expense-form') do |form| %>
+    <div>
+      <%= form.label :name, class: "form-label" %>
+      <%= form.text_field :name, class: "form-input" %>
+    </div>
+    <div>
+      <%= form.label :icon, class: "form-label" %>
+      <%= form.file_field :icon %>
+    </div>
+    
+    <%= form.submit 'Save', class: "submit-btn"%>
+  <% end %>
+</section>
