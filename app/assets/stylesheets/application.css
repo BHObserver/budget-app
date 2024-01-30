@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'proxima-nova-condensed', sans-serif;
+  color: #434b54;
+}
