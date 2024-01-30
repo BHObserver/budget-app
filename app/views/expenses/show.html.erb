@@ -1,0 +1,37 @@
+<section class="expense-show">
+  <nav class="common-nav">
+    <%= link_to "←", expenses_path, class: "back-home" %>
+    <div class="page-name">TRANSACTIONS</div>
+  </nav>
+
+  <li class="expense-item">
+    <div class="expense-link">
+      <div class="icon-container">
+        <%= image_tag @expense.icon , class: 'icon'%>
+      </div>
+      <div class="expense-name">
+        <%= @expense.name %>
+      </div>
+      <div class="total-amount">
+        $ <%= @expense.total_payment_amount %>
+      </div>
+    </div>
+  </li>
+
+  <ul class="payment-list">
+    <% @expense.allocations.each do |allocation| %>
+      <li class="expense-link payment-item">
+        <div class="expense-name">
+          <%= allocation.payment.name %>
+        </div>
+        <div class="total-amount">
+          <%= allocation.payment.amount %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+
+  <div class="new-expense">
+    <%= link_to 'Add Transaction', new_expense_payment_path(@expense), class: "new-expense-link" %>
+  </div>
+</section>
