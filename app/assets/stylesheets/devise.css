@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.splash-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3778c2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  row-gap: 10px;
+  position: relative;
+  padding: 10px;
+}
+
+.app-title {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 3px;
+  font-size: 3.5rem;
+}
+
+.splash-btn {
+  color: whitesmoke;
+  width: 90%;
+  background-color: #5fb523;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.new_user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 4px;
+}
+
+.check-field {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  column-gap: 10px;
+}
+
+.shared-link {
+  color: #154cff;
+}
