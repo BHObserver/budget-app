@@ -1,0 +1,22 @@
+.expense-show {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-list {
+  flex: 1;
+  margin: 20px 8px 0;
+  background-color: whitesmoke;
+  box-shadow: 0 0 5px #434c5577;
+  border-radius: 6px;
+  padding: 8px;
+  list-style-type: none;
+}
+
+.payment-item {
+  border-bottom: 1px solid #434c5555;
+  padding: 8px 0;
+}
