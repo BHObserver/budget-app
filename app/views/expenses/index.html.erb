@@ -1,8 +1,13 @@
 <section class="home-section">
   <div class="home-nav">
-    <%= link_to "Budgetify", expenses_path, class: 'logo' %>
+    <%= link_to "FinanceFlick", expenses_path, class: 'logo' %>
     <div class="page-name">CATEGORIES</div>
-    <%= button_to "log out", destroy_user_session_path, method: :delete, class: 'log-out' %>
+    <div class="burger-icon" id="burger-icon">
+      <%= image_tag("burger-btn.svg", class: 'burger-btn') %>
+    </div>
+    <div class="slide-menu" id="slide-menu">
+      <%= button_to "Log out", destroy_user_session_path, method: :delete, class: 'log-out' %>
+    </div>
   </div>
 
   <ul class="expense-list">
@@ -20,10 +25,27 @@
           </div>
         <% end %>
       </li>
-    <% end %> 
+    <% end %>
   </ul>
 
   <div class="new-expense">
     <%= link_to 'Add Category', new_expense_path, class: "new-expense-link" %>
   </div>
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var burgerIcon = document.getElementById('burger-icon');
+    var slideMenu = document.getElementById('slide-menu');
+
+    burgerIcon.addEventListener('click', function() {
+      burgerIcon.style.display = 'none'; // Hide the burger icon
+      slideMenu.classList.add('show');
+    });
+
+    slideMenu.addEventListener('click', function() {
+      burgerIcon.style.display = 'block'; // Show the burger icon
+      slideMenu.classList.remove('show');
+    });
+  });
+</script>
