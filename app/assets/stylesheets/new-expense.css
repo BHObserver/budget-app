@@ -1,11 +1,42 @@
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3778c2;
+  width: 100%;
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+.heading h2 {
+  font-weight: lighter;
+}
+
+.back-icon {
+  cursor: pointer;
+  margin-right: 10px;
+  width: 35px; 
+  height: 35px;  
+}
+
+.back-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.back-icon:hover img {
+  transform: scale(1.1); 
+}
+
 .new-expense-section {
-  background-color: #ececec;
+  background-color: #F5F6F8;
   width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 10px;
 }
 
 .common-nav {
@@ -13,6 +44,44 @@
   background-color: #3778c2;
   padding: 10px;
   position: relative;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+  border-top: 1.5px solid #f2f2f2;
+  border-bottom: 1.5px solid #f2f2f2;
+}
+
+.input_login {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 14pt;
+}
+
+.bar {
+  width: 100%;
+  max-width: 350px;
+  height: 2px;
+  border-radius: 50%;
+  position: absolute;
+  top: 115px;
+  right: 10px;
+  background: #f2f2f2;
+}
+
+.input_login::placeholder {
+  color: #bdbfc1;
+}
+
+.form-label {
+  display: none;
 }
 
 .back-home {
@@ -24,6 +93,7 @@
 
 .form-title {
   padding: 16px;
+  color: #f2f2f2;
 }
 
 .expense-form {
@@ -46,12 +116,21 @@
 }
 
 .submit-btn {
-  width: 40%;
+  width: 20%;
   padding: 8px;
-  background-color: whitesmoke;
-  border: 1px solid #a5a3a3;
-  border-radius: 4px;
-  align-self: flex-start;
+  font-size: 12pt;
+  font-weight: lighter;
+  background: #ffffff00;
+  color: #fff;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 8px;
+  right: 2px;
+}
+
+.empty-div {
+  width: 60px;
 }
 
 .expense-form .checkboxes {
