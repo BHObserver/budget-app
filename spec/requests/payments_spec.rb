@@ -16,9 +16,13 @@ RSpec.describe 'Payments', type: :request do
     )
     sign_in @user
   end
+
   describe 'GET /new' do
-    it 'renders the new template' do
+    before(:each) do
       get new_expense_payment_path(@expense)
+    end
+
+    it 'renders the new template' do
       expect(response).to render_template(:new)
       expect(response).to have_http_status(:ok)
     end
