@@ -60,7 +60,7 @@ Clone this repository to your desired folder:
 ```sh
   cd my-prefered-folder
   
-  git clone https://github.com/bhobserver/Recipe-App.git
+  git clone https://github.com/bhobserver/budget-app.git
 ```
 
 ### Install
@@ -125,14 +125,14 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/BHObserver/Recipe-App/issues).
+Feel free to check the [issues page](https://github.com/BHObserver/budget-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, kindly drop a star ⭐️ for the [repository](https://github.com/BHObserver/Recipe-App.git);
+If you like this project, kindly drop a star ⭐️ for the [repository](https://github.com/BHObserver/budget-app.git);
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
