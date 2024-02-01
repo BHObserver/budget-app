@@ -17,9 +17,9 @@
   - [📝 License ](#-license-)
 
 
-# 📖 TasteTrail <a name="about-project"></a>
+# 📖 FinanceFlick <a name="about-project"></a>
 
-Embark on a flavorful journey with **TasteTrail**! This recipe app simplifies your culinary experience by organizing recipes, ingredients, and kitchen inventory. Easily save ingredients, keep tabs on your kitchen supplies, create recipes, and let the app generate shopping lists for you. Share your culinary delights by making recipes public. Let TasteTrail be your kitchen companion, navigating your cooking adventures effortlessly!
+**FinanceFlick** is a mobile web application designed for users to efficiently manage their budgets.
 
 ## 🛠 Built With <a name="built-with">Ruby</a>
 
@@ -145,7 +145,7 @@ If you like this project, kindly drop a star ⭐️ for the [repository](https:/
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I want to thank Al-Amin, Lucy, Assem and Reem for always availing themselves of detailed project discussions. I thank Microverse for the chance to become a software developer.
+I extend my sincere appreciation to Microvere for offering an invaluable learning experience. Additionally, I would like to express gratitude to [Gregoire Vella](https://www.behance.net/gregoirevella) on Behance for [Original design idea](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) for the original design idea that inspired this application.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
