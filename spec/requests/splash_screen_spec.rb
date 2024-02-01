@@ -14,7 +14,7 @@ RSpec.describe 'SplashScreens', type: :request do
 
     it 'should include the app name' do
       get unauthenticated_root_path
-      expect(response.body).to include('Budgetify')
+      expect(response.body).to include('FinanceFlick')
     end
   end
 end
