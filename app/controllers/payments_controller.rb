@@ -32,7 +32,7 @@ class PaymentsController < ApplicationController
   def create_allocations
     expense_ids = params[:payment][:expense_ids]
     expense_ids.each do |expense_id|
-      Allocation.create(expense_id: expense_id, payment_id: @payment.id)
+      Allocation.create(expense_id:, payment_id: @payment.id)
     end
     redirect_to expense_path(expense_ids[0]), notice: 'Payment was created successfully'
   end

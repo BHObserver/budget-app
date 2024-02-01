@@ -32,8 +32,8 @@ class ExpensesController < ApplicationController
 
   def find_expense(id)
     current_user.expenses
-                 .includes(allocations: { payment: :allocations })
-                 .order('allocations.created_at DESC')
-                 .find(id)
+      .includes(allocations: { payment: :allocations })
+      .order('allocations.created_at DESC')
+      .find(id)
   end
 end
