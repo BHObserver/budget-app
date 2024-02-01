@@ -107,12 +107,6 @@ To run tests, run the following command:
 - Twitter: [Burhan Uddin](https://twitter.com/BurhanU14173360)
 - LinkedIn: [Burhan Uddin](https://www.linkedin.com/in/bhobserver/)
 
-👤 **King Immanuel**
-
-- GitHub: [Kingno3l](https://github.com/Kingno3l)
-- Twitter: [King Immanue](https://twitter.com/Kingnno3l_)
-- LinkedIn: [Kingno3l](https://www.linkedin.com/in/Kingno3l)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name='future-features'></a>
