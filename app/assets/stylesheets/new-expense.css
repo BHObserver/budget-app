@@ -14,6 +14,7 @@
 }
 
 .back-icon {
+  display: block;
   cursor: pointer;
   margin-right: 10px;
   width: 35px; 
@@ -38,6 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
 }
 
 .common-nav {
@@ -57,13 +59,13 @@
 }
 
 .input_login {
-  
   width: 100%;
   height: 50px;
   padding: 15px;
   border: none;
   outline: none;
   font-size: 12.5pt;
+  border-bottom: 1px solid #dbd8d8;
 }
 
 .bar {
@@ -94,7 +96,7 @@
 
 .form-title {
   padding: 16px;
-  color: #f2f2f2;
+  color: #000;
 }
 
 .expense-form {
@@ -113,7 +115,13 @@
 }
 
 .form-input {
-  padding: 8px;
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 12.5pt;
+  border-bottom: 1px solid #dbd8d8;
 }
 
 .submit-btn {
@@ -127,14 +135,43 @@
   border: none;
   outline: none;
   position: absolute;
-  top: 8px;
-  right: 2px;
+  top: -1px;
+  right: 5px;
+}
+
+.payment-submit-btn {
+  cursor: pointer;
+  width: 60%;
+  padding: 8px;
+  font-size: 12pt;
+  font-weight: lighter;
+  background: #3778c2;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
 
 .empty-div {
   width: 60px;
 }
 
+.checkbox-container {
+  padding: 10px;
+}
+
+.checkboxes {
+  padding: 10px;
+}
+
 .expense-form .checkboxes {
   display: block;
+}
+
+.transaction-container {
+  align-items: center;
+}
+
+.new-expense-section .empty-div {
+  margin-top: 20px;
 }
