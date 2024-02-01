@@ -3,7 +3,7 @@
 .splash-section {
   width: 100vw;
   height: 100vh;
-  background-color: #F0F2F1;
+  background-color: #f0f2f1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -18,7 +18,7 @@
   top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #373D48;
+  color: #373d48;
   font-family: 'Great Vibes', cursive;
   letter-spacing: 3px;
   font-size: 3.5rem;
@@ -28,7 +28,7 @@
   color: whitesmoke;
   text-decoration: none;
   width: 98%;
-  background-color: #3878C2;
+  background-color: #3878c2;
   padding: 10px;
   text-align: center;
   border-radius: 4px;
@@ -38,9 +38,9 @@
 
 .splash-btn:nth-child(3) {
   background-color: #f2f2f2;
-  color: #A0A4A7;
+  color: #a0a4a7;
   outline: none;
-} 
+}
 
 .new_user {
   width: 100%;
@@ -71,11 +71,11 @@
 }
 
 .check-field label {
-  color: #A0A4A7;
+  color: #a0a4a7;
 }
 
 .shared-link {
-  color: #A0A4A7;
+  color: #a0a4a7;
   outline: none;
   text-decoration: none;
 }
