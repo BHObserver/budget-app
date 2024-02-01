@@ -7,10 +7,7 @@ class ExpensesController < ApplicationController
   end
 
   def show
-    @expense = current_user.expenses
-      .includes(allocations: { payment: :allocations })
-      .order('allocations.created_at DESC')
-      .find(params[:id])
+    @expense = find_expense(params[:id])
   end
 
   def new
@@ -31,5 +28,12 @@ class ExpensesController < ApplicationController
 
   def expense_params
     params.require(:expense).permit(:name, :icon)
+  end
+
+  def find_expense(id)
+    current_user.expenses
+                 .includes(allocations: { payment: :allocations })
+                 .order('allocations.created_at DESC')
+                 .find(id)
   end
 end
