@@ -19,55 +19,57 @@ RSpec.describe 'Expenses', type: :request do
   end
 
   describe 'GET /index' do
-    it 'should be response successull' do
+    it 'responds successfully' do
       expect(response).to have_http_status(:ok)
     end
 
-    it 'should render the expenses index file' do
+    it 'renders the expenses index file' do
       expect(response).to render_template(:index)
     end
 
-    it 'should include the placeholder' do
+    it 'includes the placeholder' do
       expect(response.body).to include('Expense 2')
     end
   end
 
   describe 'GET /show' do
-    it 'should be response successull' do
+    before(:each) do
       get expense_path(@expense)
+    end
+
+    it 'responds successfully' do
       expect(response).to have_http_status(:ok)
     end
 
-    it 'should be response successull' do
-      get expense_path(@expense)
+    it 'renders the show template' do
       expect(response).to render_template(:show)
     end
 
-    it 'should be response successull' do
-      get expense_path(@expense)
+    it 'includes the placeholder' do
       expect(response.body).to include('Expense 2')
     end
   end
 
   describe 'GET /new' do
-    it 'should be response successfull' do
+    before(:each) do
       get new_expense_path
+    end
+
+    it 'responds successfully' do
       expect(response).to have_http_status(:ok)
     end
 
-    it 'should render the new file' do
-      get new_expense_path
+    it 'renders the new file' do
       expect(response).to render_template(:new)
     end
 
-    it 'should include the placeholder' do
-      get new_expense_path
+    it 'includes the placeholder' do
       expect(response.body).to include('New Category')
     end
   end
 
   describe 'POST /create' do
-    it 'should create a new expense' do
+    it 'creates a new expense' do
       post expenses_path, params: {
         expense: {
           name: 'New Expense',
@@ -80,7 +82,7 @@ RSpec.describe 'Expenses', type: :request do
       expect(response).to have_http_status(:ok)
     end
 
-    it 'should render new template on invalid data' do
+    it 'renders new template on invalid data' do
       post expenses_path, params: {
         expense: {
           name: ' ',
