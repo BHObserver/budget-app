@@ -1,8 +1,11 @@
+<div class="heading">
+  <%= link_to(image_tag("left-arrow.svg", alt: "Back Arrow"), "javascript:history.go(-1)", class: 'back-icon') %>
+    <h2 class="page-name">TRANSACTIONS</h2>
+  <div class="empty-div"></div>
+</div>
+
+
 <section class="expense-show">
-  <nav class="common-nav">
-    <%= link_to "←", expenses_path, class: "back-home" %>
-    <div class="page-name">TRANSACTIONS</div>
-  </nav>
 
   <li class="expense-item">
     <div class="expense-link">
