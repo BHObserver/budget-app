@@ -1,6 +1,6 @@
 <div class="heading">
   <%= link_to(image_tag("left-arrow.svg", alt: "Back Arrow"), "javascript:history.go(-1)", class: 'back-icon') %>
-  <h2 class="form-title">LOGIN</h2>
+  <h2 class="page-name">LOGIN</h2>
   <div class="empty-div"></div>
 </div>
 
@@ -12,8 +12,6 @@
         <%= f.label :email, class: 'form-label' %>
         <%= f.email_field :email, autofocus: true, class: "input_login",  placeholder: 'Email', autocomplete: "email" %>
       </div>
-
-      <div class="bar"></div>
 
       <div class="field">
         <%= f.label :password, class: 'form-label' %>
