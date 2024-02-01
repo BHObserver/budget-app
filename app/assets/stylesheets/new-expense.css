@@ -17,8 +17,8 @@
   display: block;
   cursor: pointer;
   margin-right: 10px;
-  width: 35px; 
-  height: 35px;  
+  width: 35px;
+  height: 35px;
 }
 
 .back-icon img {
@@ -29,11 +29,11 @@
 }
 
 .back-icon:hover img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .new-expense-section {
-  background-color: #F5F6F8;
+  background-color: #f5f6f8;
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -130,7 +130,7 @@
   padding: 8px;
   font-size: 12pt;
   font-weight: lighter;
-  background: #ffffff00;
+  background: #fff0;
   color: #fff;
   border: none;
   outline: none;
