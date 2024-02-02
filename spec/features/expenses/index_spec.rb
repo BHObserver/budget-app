@@ -16,13 +16,7 @@ RSpec.feature 'Expenses::Indices', type: :feature do
   end
 
   def create_user
-    User.create(
-      id: 2,
-      name: 'becky',
-      email: 'becky@mail.com',
-      password: 'abcxyz123',
-      confirmed_at: Time.now
-    )
+    User.create(id: 2, name: 'becky', email: 'becky@mail.com', password: 'abcxyz123', confirmed_at: Time.now)
   end
 
   def create_expense(user:)
