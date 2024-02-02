@@ -17,20 +17,13 @@ RSpec.feature 'Expenses::Shows', type: :feature do
   end
 
   def create_user
-    User.create(
-      id: 2,
-      name: 'becky',
-      email: 'becky@mail.com',
-      password: 'abcxyz123',
-      confirmed_at: Time.now
-    )
+    User.create(id: 2, name: 'becky', email: 'becky@mail.com', password: 'abcxyz123', confirmed_at: Time.now)
   end
 
   def create_expense(name:, icon_path:, user:)
     Expense.create(
-      name: name,
-      icon: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'files', icon_path), 'image/png'),
-      user_id: user.id
+      name:,
+      icon: fixture_file_upload(Rails.root.join('spec', 'fixtures', 'files', icon_path), 'image/png'), user_id: user.id
     )
   end
 
