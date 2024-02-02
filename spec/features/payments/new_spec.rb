@@ -10,7 +10,13 @@ RSpec.feature 'Payments::News', type: :feature do
   end
 
   def create_user
-
+    User.create(
+      id: 2,
+      name: 'becky',
+      email: 'becky@mail.com',
+      password: 'abcxyz123',
+      confirmed_at: Time.now
+    )
   end
 
   def fill_in_and_submit_payment_form(name, amount)
