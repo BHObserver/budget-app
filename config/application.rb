@@ -16,6 +16,7 @@ module BudgetApp
     # Common ones are `templates`, `generators`, or `middleware`, for example.
     config.autoload_lib(ignore: %w(assets tasks))
 
+    config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
     # Configuration for the application, engines, and railties goes here.
     #
