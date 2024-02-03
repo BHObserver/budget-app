@@ -1,7 +1,12 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  database: financeflick_development
   pool: 5
+  username: postgres
+  password: BurSqlHan#007
+  host: localhost
+  port: 5432
 
 development:
   <<: *default
@@ -14,11 +19,5 @@ test:
 production:
   <<: *default
   database: financeflick_production
-  username: <%= ENV['DB_USERNAME'] %>
-  password: <%= ENV['DB_PASSWORD'] %>
-  host: <%= ENV['DB_HOST'] || 'localhost' %>
-  port: <%= ENV['DB_PORT'] || 5432 %>
-  sslmode: verify-full
-  sslrootcert: <%= ENV['DB_SSL_ROOT_CERT'] %>
-  sslkey: <%= ENV['DB_SSL_KEY'] %>
-  sslcert: <%= ENV['DB_SSL_CERT'] %>
+  username: postgres
+  password: BurSqlHan#007
