@@ -1,6 +1,8 @@
 <div class="heading">
-  <%= link_to(image_tag("left-arrow.svg", alt: "Back Arrow"), "javascript:history.go(-1)", class: 'back-icon') %>
-    <h2 class="page-name">TRANSACTIONS</h2>
+  <%= link_to(expenses_path) do %>
+    <%= image_tag("left-arrow.svg", alt: "Back Arrow", class: 'back-icon') %>
+  <% end %>
+  <h2 class="page-name">TRANSACTIONS</h2>
   <div class="empty-div"></div>
 </div>
 
@@ -28,7 +30,7 @@
           <%= allocation.payment.name %>
         </div>
         <div class="total-amount">
-          <%= allocation.payment.amount %>
+          $ <%= allocation.payment.amount %>
         </div>
       </li>
     <% end %>
