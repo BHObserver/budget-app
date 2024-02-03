@@ -1,7 +1,8 @@
-Rails.application.routes.draw do
-  devise_for :users
+# config/routes.rb
 
-  # Spalsh screen
+Rails.application.routes.draw do
+  devise_for :users, controllers: { registrations: 'custom_registrations' }
+
   authenticated :user do
     root "expenses#index", as: :authenticated_root
   end
@@ -12,7 +13,6 @@ Rails.application.routes.draw do
     end
   end
 
-  # Rails restful routes
   resources :expenses, except: [:edit, :update, :destroy] do
     resources :payments, except: [:edit, :update, :destroy]
   end
