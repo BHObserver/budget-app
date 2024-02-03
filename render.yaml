@@ -1,6 +1,6 @@
 databases:
-  - name: financeflick
-    databaseName: financeflick
+  - name: mysite
+    databaseName: mysite
     user: mysite
     plan: free
 
@@ -15,7 +15,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: financeflick
+          name: mysite
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
