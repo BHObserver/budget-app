@@ -23,14 +23,6 @@
 
 **FinanceFlick** is a mobile web application designed for users to efficiently manage their budgets.
 
- - Users can register and log in to access a private budget management application built with Ruby on Rails.
- - The app features a splash screen with the app's name and links to sign up and log in pages.
- - Upon logging in, users are directed to the home page displaying categories, each showing its name, icon, and total transaction amount.
- - Clicking on a category navigates the user to the transactions page for that category, where transactions are listed in order of recency.
- - The transactions page includes the total amount for the category and a button to add a new transaction.
- - Users can add new transactions by filling out a form with mandatory fields like name, amount, and at least one category.
- - The app allows users to add new categories by providing a name and icon through a dedicated form.
-
 ## 🛠 Built With <a name="built-with">Ruby</a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -56,7 +48,7 @@
 
 ## Presentation Video <a name="video-presentation"></a>
 
-- [Presentation Video Link]()
+- [Presentation Video Link](https://drive.google.com/file/d/1yvbPuBJ7zYZ5mKNIrS2opGtQkcRWw9v5/view?usp=sharing)
 
 
 ## Getting Started
