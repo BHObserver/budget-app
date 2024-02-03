@@ -11,7 +11,11 @@ RSpec.feature 'Payments::News', type: :feature do
 
   def create_user
     User.create(
-
+      id: 2,
+      name: 'becky',
+      email: 'becky@mail.com',
+      password: 'abcxyz123',
+      confirmed_at: Time.now
     )
   end
 
