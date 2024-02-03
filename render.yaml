@@ -1,5 +1,5 @@
 databases:
-  - name: financeflick
+  - name: mysite
     databaseName: mysite
     user: mysite
     plan: free
