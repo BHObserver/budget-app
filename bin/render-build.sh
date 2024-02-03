@@ -1,2 +1,7 @@
+#!/usr/bin/env bash
+# exit on error
+set -o errexit
+
 bundle install
-bundle exec rails server
+rails assets:precompile
+rails assets:clean
