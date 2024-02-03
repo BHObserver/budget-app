@@ -1,6 +1,8 @@
 <div class="heading">
-<%= link_to(image_tag("left-arrow.svg", alt: "Back Arrow"), "javascript:history.go(-1)", class: 'back-icon') %>
-<div class="empty-div"></div>
+  <%= link_to(expenses_path) do %>
+    <%= image_tag("left-arrow.svg", alt: "Back Arrow", class: 'back-icon') %>
+  <% end %>
+  <div class="empty-div"></div>
 </div>
 
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
