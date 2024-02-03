@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  database: financeflick_development
+  pool: 5
+  username: postgres
+  password: BurSqlHan#007
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: financeflick_development
+
+test:
+  <<: *default
+  database: financeflick_test
+
+production:
+  <<: *default
+  database: financeflick_production
+  username: postgres
+  password: BurSqlHan#007

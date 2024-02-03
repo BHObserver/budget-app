@@ -1,0 +1,177 @@
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3778c2;
+  width: 100%;
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+.heading h2 {
+  font-weight: lighter;
+}
+
+.back-icon {
+  display: block;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+}
+
+.back-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.back-icon:hover img {
+  transform: scale(1.1);
+}
+
+.new-expense-section {
+  background-color: #f5f6f8;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.common-nav {
+  width: 100vw;
+  background-color: #3778c2;
+  padding: 10px;
+  position: relative;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+  border-top: 1.5px solid #f2f2f2;
+  border-bottom: 1.5px solid #f2f2f2;
+}
+
+.input_login {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 12.5pt;
+  border-bottom: 1px solid #dbd8d8;
+}
+
+.bar {
+  width: 100%;
+  min-width: 350px;
+  height: 2px;
+  border-radius: 50%;
+  position: absolute;
+  top: 115px;
+  right: 2px;
+  background: #f2f2f2;
+}
+
+.input_login::placeholder {
+  color: #bdbfc1;
+}
+
+.form-label {
+  display: none;
+}
+
+.back-home {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.form-title {
+  padding: 16px;
+  color: #000;
+}
+
+.expense-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.expense-form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 4px;
+}
+
+.form-input {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 12.5pt;
+  border-bottom: 1px solid #dbd8d8;
+}
+
+.submit-btn {
+  cursor: pointer;
+  width: 20%;
+  padding: 8px;
+  font-size: 12pt;
+  font-weight: lighter;
+  background: #fff0;
+  color: #fff;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: -1px;
+  right: 5px;
+}
+
+.payment-submit-btn {
+  cursor: pointer;
+  width: 60%;
+  padding: 8px;
+  font-size: 12pt;
+  font-weight: lighter;
+  background: #3778c2;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.empty-div {
+  width: 60px;
+}
+
+.checkbox-container {
+  padding: 10px;
+}
+
+.checkboxes {
+  padding: 10px;
+}
+
+.expense-form .checkboxes {
+  display: block;
+}
+
+.transaction-container {
+  align-items: center;
+}
+
+.new-expense-section .empty-div {
+  margin-top: 20px;
+}

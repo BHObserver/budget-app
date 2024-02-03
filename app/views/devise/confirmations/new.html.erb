@@ -1,0 +1,23 @@
+
+<div class="heading">
+<%= link_to(image_tag("left-arrow.svg", alt: "Back Arrow"), "javascript:history.go(-1)", class: 'back-icon') %>
+<div class="empty-div"></div>
+</div>
+
+<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+  <h2 class="form-title">Resend confirmation instructions</h2>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :email, class:"form-label" %><br />
+    <%= f.email_field :email, class:"form-input", placeholder:"Email", autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Resend confirmation instructions", class:"splash-btn" %>
+  </div>
+<% end %>
+
+<div class="shared-links-container">
+  <%= render "devise/shared/links" %>
+</div>
