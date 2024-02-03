@@ -1,7 +1,23 @@
 #!/usr/bin/env bash
-# exit on error
+# Exit on error
 set -o errexit
 
-bundle install
+# Ensure Bundler is installed
+if ! command -v bundle &> /dev/null; then
+  echo "Bundler not found. Installing Bundler..."
+  gem install bundler
+fi
+
+# Install dependencies
+echo "Installing Ruby dependencies..."
+bundle install --deployment --without development:test
+
+# Precompile assets
+echo "Precompiling assets..."
 ./bin/rails assets:precompile
-./bin/rails assets:clean
+
+# Clean up assets (optional)
+# echo "Cleaning up assets..."
+# ./bin/rails assets:clean
+
+echo "Deployment script completed successfully."
