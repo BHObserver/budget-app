@@ -1,5 +1,7 @@
 <nav class="common-nav">
-  <%= link_to(image_tag("left-arrow.svg", alt: "Back Arrow"), "javascript:history.go(-1)", class: 'back-icon') %>
+  <%= link_to(expense_path(@expense)) do %>
+    <%= image_tag("left-arrow.svg", alt: "Back Arrow", class: 'back-icon') %>
+  <% end %>
 </nav>
 
 <section class="new-expense-section">
@@ -16,14 +18,17 @@
       <%= form.number_field :amount, placeholder:"Amount", class: "form-input" %>
     </div>
 
-    <div class="checkbox-container">
-      <div class="checkboxes">
-        <div class: "form-label">Select Categories </div>
-        <% @expenses.each_with_index do |expense, index| %>
-          <%= check_box_tag 'payment[expense_ids][]', expense.id %>
-          <%= label_tag "payment_expense_#{expense.id}", expense.name %> <br>
-        <% end %>
-      </div>
+
+
+      <div class="checkbox-container">
+        <div class="checkboxes">
+          <div class="form-label">Select Category</div>
+          <% @expenses.each_with_index do |expense, index| %>
+            <%= radio_button_tag 'payment[expense_ids][]', expense.id %>
+            <%= label_tag "payment_expense_#{expense.id}", expense.name %> <br>
+          <% end %>
+        </div>
+    </div>
 
       <div class="transaction-container">
         <%= form.submit 'Create Transaction', class: 'payment-submit-btn' %>
